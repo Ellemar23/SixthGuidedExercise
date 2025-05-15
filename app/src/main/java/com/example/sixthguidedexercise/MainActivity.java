@@ -48,9 +48,32 @@ public class MainActivity extends AppCompatActivity {
                     result.setVisibility(View.VISIBLE);
                     result.setTextColor(Color.GREEN);
                     result.setText("Number Combination Color is GREEN");
-                }else{
-                    // this will hide the TextView named result
-                    result.setVisibility(View.INVISIBLE);
+                }
+                else if(two.isChecked() && four.isChecked() && one.isChecked() && three.isChecked()) {
+                    result.setVisibility(View.VISIBLE);
+                    result.setTextColor(Color.YELLOW);
+                    result.setText("Number Combination Color is YELLOW");
+                }
+
+                else if (one.isChecked()) {
+                    result.setVisibility(View.VISIBLE);
+                    result.setTextColor(Color.CYAN);
+                    result.setText("Number Color is CYAN");
+                }
+                else if (two.isChecked()){
+                    result.setVisibility(View.VISIBLE);
+                    result.setTextColor(Color.MAGENTA);
+                    result.setText("Number Color is Magenta");
+                }
+                else if (three.isChecked()){
+                    result.setVisibility(View.VISIBLE);
+                    result.setTextColor(Color.GRAY);
+                    result.setText("Number Color is GRAY");
+                }
+                else if (four.isChecked()){
+                    result.setVisibility(View.VISIBLE);
+                    result.setTextColor(Color.BLACK);
+                    result.setText("Number Color is BLACK");
                 }
             }
         });
